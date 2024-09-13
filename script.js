@@ -86,7 +86,6 @@ function fetchDepartments() {
                 departmentList.push(departments[i]);
             }
 
-            // console.log(departmentList[1]);
             pageSelector(1, departmentList, 0);
             // departments.forEach(element => {
             //     addDeptDiv(element.id, element.name);

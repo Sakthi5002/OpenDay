@@ -31,8 +31,6 @@ html {
 .banner-images {
     display: flex;
     position: relative;
-    /* height: 25rem; */
-    /* height: 60%; */
     max-height: 70%;
     background-color: aquamarine;
 }
@@ -106,35 +104,16 @@ html {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* width: 100%; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* flex: 1 1 1; */
-    /* flex-grow: 0; */
-    /* flex-direction: column; */
-    /* display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(100, 0fr); */
-    /* row-gap: 0; */
 }
 
 .department-container {
     width: 20rem;
     height: 25rem;
     margin: 1%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex: 1 1 1;
-    flex-grow: 1; */
-    /* justify-content: space-around; */
-    /* margin: 2%; */
     border-radius: 1rem;
     background-color: white;
     box-shadow: 1px 1px 5px #3333334c;
     cursor: pointer;
-    /* height: 10%; */
-    /* margin: 10px; */
 }
 
 .department-container p {
