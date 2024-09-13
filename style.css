@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-bar {
+    display: flex;
+    padding: 2rem;
+    background-color: #00334d;
+    justify-content: center;
+}
+
+.top-bar h1 {
+    font-family: 'Montserrat Regular';
+    font-weight: bolder;
+    font-size: 3rem;
+    color: rgb(106, 203, 170);
+}
+
+.banner-images {
+    display: flex;
+    position: relative;
+    /* height: 25rem; */
+    /* height: 60%; */
+    max-height: 70%;
+    background-color: aquamarine;
+}
+
+.banner-images img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.banner-btn {
+    width: 3rem;
+    height: 4rem;
+    border: none;
+    background-color: #00334d;
+    color: rgb(106, 203, 170);
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    background-color: azure;
+}
+
+.banner-btn-left {
+    position: absolute;
+    left: 0rem;
+    top: 40%;
+}
+
+.banner-btn-right {
+    position: absolute;
+    right: 0rem;
+    top: 40%;
+}
+
+.departments {
+    /* position: relative; */
+    background-color: rgb(247, 247, 247);
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+}
+
+.department-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    align-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Montserrat Regular';
+    font-weight: bolder;
+}
+
+#search-input {
+    font-family: 'Montserrat Regular';
+    position: relative;
+    height: 2rem;
+    padding: 0.5rem;
+    outline: none;
+    left: 31%;
+    border: 0;
+    background-color: hwb(0 35% 65% / 0.208);
+}
+
+.department-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* flex: 1 1 1; */
+    /* flex-grow: 0; */
+    /* flex-direction: column; */
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(100, 0fr); */
+    /* row-gap: 0; */
+}
+
+.department-container {
+    width: 20rem;
+    height: 25rem;
+    margin: 1%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex: 1 1 1;
+    flex-grow: 1; */
+    /* justify-content: space-around; */
+    /* margin: 2%; */
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px #3333334c;
+    cursor: pointer;
+    /* height: 10%; */
+    /* margin: 10px; */
+}
+
+.department-container p {
+    /* height: 0; */
+    font-family: 'Montserrat Regular';
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.department-images {
+    width: 100%;
+    height: 90%;
+    /* object-fit: cover; */
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* #search-input {
+        top: 20%;
+        right: 1%;
+        width: 12rem;
+    }
+
+    .department-head {
+        padding-top: 2%;
+        font-size: 1.5rem;
+    } */
+}
+
+.pagination {
+    font-family: 'Montserrat Regular';
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.pagination button {
+    font-size: large;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #00334d;
+    color: rgb(106, 203, 170);
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.map-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgb(247, 247, 247);
+}
+
+.map-btn button {
+    height: 4rem;
+    width: 10rem;
+    background-color: #00334d;
+    color: rgb(106, 203, 170);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.map-btn button:hover {
+    border: 0.1rem solid;
+    border-color: #00334d;
+    background-color: azure;
+}
