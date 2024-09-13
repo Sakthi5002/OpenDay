@@ -77,7 +77,7 @@ function pageSelector(page, list, isSearch) {
     }
 }
 
-async function fetchDepartments() {
+function fetchDepartments() {
     fetch("https://openday.kumaraguru.in/api/v1/departments")
         .then((response) => response.text())
         .then((result) => {
